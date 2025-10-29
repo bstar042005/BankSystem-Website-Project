@@ -1,15 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BankSystem Website</title>
-    <link rel="stylesheet" href="css/style.css"> 
-</head>
 <body>
-    
-    <h1>Welcome to the BankSystem Website</h1>
-    
-    <script src="js/script.js"></script>
+
+    <div class="main-container">
+
+        <header>
+            <div class="header-row">
+                <div class="logo-area">
+                    <img src="images/logo.png" alt="Logo Image" class="logo-image">
+                </div>
+
+                <div class="bank-name-area">
+                    <h1>Bank Name (Big Font-use header tags)</h1>
+                    
+                    <table class="menu-table">
+                        <tr>
+                            <td>Home</td>
+                            <td>|</td>
+                            <td>About Us</td>
+                            <td>|</td>
+                            <td>Login</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="content-row">
+                
+                <div class="banner-area">
+                    <img src="images/banner.png" alt="Banner Image" class="banner-image">
+                </div>
+                
+                <div class="scrolling-news-area">
+                    <h2>Scrolling News</h2>
+                    <marquee behavior="scroll" direction="up" scrollamount="2">
+                        - News Item 1: Bank rates updated! <br>
+                        - News Item 2: New mobile app launched. <br>
+                        - News Item 3: Quarterly report available now.
+                    </marquee>
+                </div>
+            </div>
+
+            <section class="info-section">
+                <p>Some text showing information about bank. (Use paragraph, list tags)</p>
+                <p>Welcome to the Bank System. We offer reliable and secure financial services tailored to meet your needs.</p>
+                <ul class="info-list">
+                    <li>24/7 Customer Support</li>
+                    <li>Low interest rates on loans</li>
+                    <li>Secure online transactions</li>
+                </ul>
+            </section>
+
+            <section class="services-section">
+                <h2>Services (Big Font-use header tags)</h2>
+                
+                <div class="services-grid">
+                    <div class="service-item">
+                        <p>Saving A/C</p>
+                        <img src="images/saving_ac.png" alt="(Image)">
+                    </div>
+                    <div class="service-item">
+                        <p>Fixed Deposit</p>
+                        <img src="images/fixed_deposit.png" alt="(Image)">
+                    </div>
+                    <div class="service-item">
+                        <p>Credit Cards</p>
+                        <img src="images/credit_cards.png" alt="(Image)">
+                    </div>
+                    <div class="service-item">
+                        <p>Loan</p>
+                        <img src="images/loan.png" alt="(Image)">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script> 
 </body>
-</html>
