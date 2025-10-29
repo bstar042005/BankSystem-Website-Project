@@ -1,89 +1,52 @@
-/* --- NEW FORM STYLES --- */
+/* --- New Dashboard Styles --- */
 
-.form-page {
-    padding: 20px 50px;
-    text-align: center;
+.dashboard-page {
+    padding: 20px;
 }
 
-.form-page h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
+.dashboard-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
     color: #004d99;
 }
 
-.standard-form {
-    max-width: 500px;
-    margin: 0 auto; /* Center the form block */
-}
-
-/* Styles for labels and inputs */
-.form-row {
-    display: flex;
+.dashboard-content {
+    display: flex; /* Enables two-column layout */
     justify-content: space-between;
-    align-items: flex-start; /* Align Address label to the top of the textarea */
+    gap: 20px;
+}
+
+.list-container {
+    width: 48%; /* Each list takes up slightly less than half the space */
+    padding: 10px;
+    border: 1px solid #000; /* Border around each list box */
+}
+
+.list-container h3 {
+    text-align: center;
     margin-bottom: 15px;
+    font-size: 20px;
 }
 
-.form-row label {
-    font-weight: bold;
-    font-size: 16px;
-    padding-top: 5px; /* Alignment with text inputs */
-    width: 30%; /* Allocate space for the label */
-    text-align: left;
-}
-
-.text-field, .text-area {
-    width: 65%; /* Allocate space for the input field */
-    padding: 8px 10px;
-    border: 2px solid royalblue; /* Blue border for inputs */
-    border-radius: 3px;
-    font-size: 16px;
-}
-
-.text-area {
-    height: 80px; /* Specific height for Address box */
-    resize: none;
-}
-
-/* Styles for buttons (Account Opening page) */
-.form-buttons {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.submit-btn, .reset-btn {
-    padding: 10px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 2px solid #333;
-}
-
-.submit-btn {
-    background-color: #00b33c;
-    color: white;
-}
-
-.reset-btn {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Styles for single button (Login page) */
-.form-buttons-single {
-    margin-top: 30px;
+.data-table {
+    width: 100%;
+    border-collapse: collapse; /* Removes spaces between cells */
     text-align: center;
 }
 
-.submit-btn-large {
-    padding: 10px 40px;
-    font-size: 20px;
+.data-table th, .data-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.data-table th {
+    background-color: #f0f0f0;
     font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 2px solid #333;
-    background-color: #004d99;
-    color: white;
+}
+
+.data-table a {
+    color: red; /* Matching the hint color in the sample */
+    text-decoration: none;
 }
