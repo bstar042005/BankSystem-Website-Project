@@ -1,134 +1,89 @@
-/* Minimal reset to start */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+/* --- NEW FORM STYLES --- */
 
-/* Main Page Container: The large border box in the sample */
-.main-container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto; /* Centers the container on the page */
-    padding: 20px;
-    border: 3px solid #000; /* Main border */
-}
-
-/* --- 1. HEADER & MENU STYLES --- */
-.header-row {
-    display: flex;
-    align-items: center;
-    border: 1px solid red; /* Border as shown around the top block */
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.logo-area {
-    width: 25%;
-    padding: 10px;
-    border: 1px solid red; /* Border for "Logo Image" */
+.form-page {
+    padding: 20px 50px;
     text-align: center;
 }
-.logo-image {
-    width: 100px; /* Placeholder size */
-    height: 100px;
-    background-color: lightblue;
-    display: block;
-    margin: auto;
-}
 
-.bank-name-area {
-    width: 75%;
-    padding-left: 20px;
-}
-
-.bank-name-area h1 {
-    font-size: 40px; /* Big Font */
+.form-page h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
     color: #004d99;
-    margin-bottom: 10px;
 }
 
-/* Table Menu Styling */
-.menu-table {
-    border-collapse: collapse;
-    font-size: 18px;
-    color: red; /* Matching the hint color */
-}
-.menu-table td {
-    padding: 5px 10px 5px 0;
-    font-weight: bold;
+.standard-form {
+    max-width: 500px;
+    margin: 0 auto; /* Center the form block */
 }
 
-
-/* --- 2. BANNER & SCROLLING NEWS --- */
-.content-row {
+/* Styles for labels and inputs */
+.form-row {
     display: flex;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start; /* Align Address label to the top of the textarea */
+    margin-bottom: 15px;
 }
 
-.banner-area {
-    width: 70%;
-    padding: 10px;
-    border: 1px solid #000;
-}
-.banner-image {
-    width: 100%;
-    height: 250px; /* Fixed height for visual consistency */
-    background-color: lightgray;
+.form-row label {
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 5px; /* Alignment with text inputs */
+    width: 30%; /* Allocate space for the label */
+    text-align: left;
 }
 
-.scrolling-news-area {
-    width: 30%;
-    padding: 10px;
-    border: 1px solid red; /* Border for "Scrolling News" */
-}
-.scrolling-news-area marquee {
-    height: 200px; 
-    padding: 5px;
-    line-height: 1.5;
+.text-field, .text-area {
+    width: 65%; /* Allocate space for the input field */
+    padding: 8px 10px;
+    border: 2px solid royalblue; /* Blue border for inputs */
+    border-radius: 3px;
+    font-size: 16px;
 }
 
-
-/* --- 3. INFORMATION SECTION --- */
-.info-section {
-    padding: 10px;
-    border: 1px solid #000;
-    margin-bottom: 20px;
-}
-.info-section p {
-    margin-bottom: 10px;
+.text-area {
+    height: 80px; /* Specific height for Address box */
+    resize: none;
 }
 
-
-/* --- 4. SERVICES SECTION --- */
-.services-section {
-    padding: 10px;
-    border: 1px solid #000;
-}
-
-.services-section h2 {
-    font-size: 30px; /* Big Font */
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.services-grid {
+/* Styles for buttons (Account Opening page) */
+.form-buttons {
+    margin-top: 30px;
     display: flex;
     justify-content: space-around;
+}
+
+.submit-btn, .reset-btn {
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+.submit-btn {
+    background-color: #00b33c;
+    color: white;
+}
+
+.reset-btn {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Styles for single button (Login page) */
+.form-buttons-single {
+    margin-top: 30px;
     text-align: center;
 }
 
-.service-item {
-    width: 20%;
-    border: 1px solid blue; /* Border around each service box */
-    padding: 10px;
-}
-.service-item img {
-    width: 60px;
-    height: 60px;
-    background-color: #ffcc00;
-    display: block;
-    margin: 10px auto;
+.submit-btn-large {
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #333;
+    background-color: #004d99;
+    color: white;
 }

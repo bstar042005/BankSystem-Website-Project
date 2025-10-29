@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Opening - BankSystem</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <div class="main-container">
+
+        <header>
+            <div class="header-row">
+                <div class="logo-area">
+                    <img src="images/logo.png" alt="Logo Image" class="logo-image">
+                </div>
+                <div class="bank-name-area">
+                    <h1>Bank Name (Big Font-use header tags)</h1>
+                    <table class="menu-table">
+                        <tr>
+                            <td>Dashboard</td>
+                            <td>|</td>
+                            <td>Open A/C</td>
+                            <td>|</td>
+                            <td>Loan</td>
+                            <td>|</td>
+                            <td>Deposit</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </header>
+
+        <main class="form-page">
+            <h2>Account Opening</h2>
+            <form action="#" method="post" class="standard-form">
+                
+                <div class="form-row">
+                    <label for="cname">Customer Name:</label>
+                    <input type="text" id="cname" name="customerName" class="text-field">
+                </div>
+                
+                <div class="form-row">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" class="text-area"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" class="text-field">
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
